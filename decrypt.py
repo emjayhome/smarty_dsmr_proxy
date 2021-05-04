@@ -80,7 +80,7 @@ class SmartyProxy():
         parser.add_argument('-i', '--serial-input-port', required=False, default="/dev/ttyUSB0", help="Input port. Defaults to /dev/ttyUSB0.")
         parser.add_argument('-o', '--serial-output-port', required=False, help="Output port, e.g. /dev/pts/2.")
         parser.add_argument('-a', '--aad', required=False, default="3000112233445566778899AABBCCDDEEFF", help="Additional authenticated data")
-        parser.add_argument('-b', '--broker', required=False, default="127.0.0.1", help="MQTT Broker Address")
+        parser.add_argument('-b', '--broker', required=False, default="192.168.6.30", help="MQTT Broker Address")
         parser.add_argument('-t', '--topic-prefix', required=False, default="sagemcom", help="MQTT Topic prefix")
         parser.add_argument('-p', '--parse', action='store_true', required=False, default=False, help="Parse and pretty print DSMR v5 telegram")
         self._args = parser.parse_args()
