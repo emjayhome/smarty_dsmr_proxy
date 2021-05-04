@@ -105,6 +105,7 @@ class SmartyProxy():
             )
         except (serial.SerialException, OSError) as err:
             print("ERROR")
+            print(err)
 
     # Start processing incoming data
     def process(self):
